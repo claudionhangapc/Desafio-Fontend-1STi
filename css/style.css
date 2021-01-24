@@ -64,7 +64,18 @@ body{
   margin: 0 auto;
   padding: 23px;
   box-sizing: border-box;
+  position: relative;
+  
 }
+
+.container__item1__content__span{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.3em;
+  color: #FF9A00;;
+}
+
 .container__item1__content h3{
   font-size: 0.875em;
   margin-bottom: 20px;
@@ -120,8 +131,10 @@ body{
 }
 .container__item1__content__week_ul{
   list-style: none;
-  
 }
+
+
+
 .container__item1__content__week_ul li{
   display: inline-block;
   
@@ -234,4 +247,35 @@ body{
 
 .container__item3__ul__div--margin-left{
   margin-left: 60px;
+}
+
+/*
+* responsividade
+*/
+
+@media(max-width: 520px){
+  .container{
+    max-width: 100%;
+  }
+  .container__item2__div{
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+ 
+  .container__item2__div__input{
+   width: 100%;
+   font-size: 1.125em;
+  }
+  .container__item2__div__icon{
+    right: 35px;
+  }
+  .container__item3__ul__div--margin-left {
+    margin-left: 0px;
+}
+
+.container__item1__content__week_ul--display{
+  display: none !important;
+}
 }
