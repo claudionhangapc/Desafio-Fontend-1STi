@@ -13,8 +13,8 @@
   <div class="container">
     <div class="container__item1">
       <h1 class="container__item1__titulo">Previsão do tempo</h1>
-      <div class="container__item1__content">
-        <span class="container__item1__content__span">x</span>
+      <div id ="container_search" class="container__item1__content">
+        <span id="span_close" class="container__item1__content__span">x</span>
         <h3 id="city">Niterói, RJ - Brasil</h3>
         <h2 id="temp"> 20ºC Nublado</h2>
         <div class="container__item1__content__div">
@@ -99,8 +99,11 @@
     
     <div class="container__item2">
       <div class="container__item2__div">
-        <input type="text" class="container__item2__div__input" placeholder="Insira aqui o nome da cidade">
-        <i class="fa fa-search fa-2x container__item2__div__icon"></i>
+        <input id="input_search" type="text" class="container__item2__div__input" placeholder="Insira aqui o nome da cidade">
+        <span class="container__item2__div__icon" id="click_search">
+          <i  class="fa fa-search fa-2x "></i>
+        </span>
+        
       </div>
     </div>
 
@@ -142,7 +145,7 @@
                   </ul>
               </div>
               <div class="container__item3_content__div_info container__item3__ul__div--margin-left">
-                <p>
+                <p class="container__item3_content__div_info__p">
                   <span class="container__item3__ul__span--margin-right">Min</span>
                   <span>Máx</span> 
                 </p>

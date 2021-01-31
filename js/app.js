@@ -2,12 +2,15 @@
 /************************
  * obtendo alguns elementos
 ************************/
+const span_close = document.getElementById("span_close");
 const temp = document.getElementById("temp");
 const city = document.getElementById("city");
 const humidity = document.getElementById("humidity");
 const temp_min = document.getElementById("temp_min");
 const temp_max = document.getElementById("temp_max");
 const wind_speedy = document.getElementById("wind_speedy");
+const container_search = document.getElementById("container_search");
+const url = 'https://api.hgbrasil.com/weather?format=json-cors&key=100b7dde&city_name=';
 
 const days_of_the_week = {
   Dom:"Domingo",
@@ -20,12 +23,6 @@ const days_of_the_week = {
 }
 
 
-fetch('js/arquivo.json').then(function(response){
-  return response.json();
-}).then(function(response_jason){
-  //addInfoWeatherHeader(response_jason)
-  //addAllDaysOnTheList(response_jason.results.forecast,days_of_the_week);
-});
 
 
 /*************************
@@ -83,3 +80,39 @@ function addInfoWeatherHeader(response_jason){
   wind_speedy.innerText = response_jason.results.wind_speedy.replaceAll(/\s/g,'');
 
 }
+
+function getWeahterByCity(){
+  const city_name = document.getElementById("input_search").value;
+  if(city_name ==""){
+    alert("Preencha o campo com o nome da cidade");
+  }else{
+    fetch("js/arquivo.json").then(function(response){
+      return response.json();
+    }).then(function(response_jason){
+      
+      if(response_jason.error===true){
+        alert(response_jason.message);
+      }else{
+        if(response_jason.by=="default"){
+          alert("Cidade não encontrada");
+        }else{
+          
+          addInfoWeatherHeader(response_jason)
+          addAllDaysOnTheList(response_jason.results.forecast,days_of_the_week);
+          container_search.classList.add("ativo");
+        } 
+      }
+    });
+  } 
+}
+
+function closeBox(){
+  container_search.classList.remove("ativo");
+}
+
+/*********************
+*chamando as funcçoes
+**********************/
+
+document.getElementById("click_search").addEventListener("click",getWeahterByCity);
+span_close.addEventListener("click",closeBox);
