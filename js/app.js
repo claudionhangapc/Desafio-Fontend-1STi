@@ -9,6 +9,7 @@ const humidity = document.getElementById("humidity");
 const temp_min = document.getElementById("temp_min");
 const temp_max = document.getElementById("temp_max");
 const wind_speedy = document.getElementById("wind_speedy");
+const sensacao = document.getElementById("sensacao");
 const container_search = document.getElementById("container_search");
 const url = 'https://api.hgbrasil.com/weather?format=json-cors&key=100b7dde&city_name=';
 
@@ -77,6 +78,7 @@ function addInfoWeatherHeader(response_jason){
   temp_min.innerText = response_jason.results.forecast[0].min+'º';
   city.innerText = response_jason.results.city+' - Brasil';
   humidity.innerText = response_jason.results.humidity+'%';
+  sensacao.innerText = getThermalSensation(response_jason.results.wind_speedy[0], response_jason.results.temp)+'º';
   wind_speedy.innerText = response_jason.results.wind_speedy.replaceAll(/\s/g,'');
 
 }
@@ -86,7 +88,7 @@ function getWeahterByCity(){
   if(city_name ==""){
     alert("Preencha o campo com o nome da cidade");
   }else{
-    fetch("js/arquivo.json").then(function(response){
+    fetch(url+city_name).then(function(response){
       return response.json();
     }).then(function(response_jason){
       
@@ -106,9 +108,17 @@ function getWeahterByCity(){
   } 
 }
 
+function getThermalSensation(velocidade, temperatura){
+  const st = 33 + (10*Math.sqrt(velocidade) + 10.45 - velocidade)*((temperatura-33)/22);
+  return st.toPrecision(2);
+}
+
+
 function closeBox(){
   container_search.classList.remove("ativo");
+  document.getElementById("input_search").value="";
 }
+
 
 /*********************
 *chamando as funcçoes
