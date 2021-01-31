@@ -1,0 +1,105 @@
+{
+  "by": "city_name",
+  "valid_key": true,
+  "results": {
+  "temp": 27,
+  "date": "30/01/2021",
+  "time": "20:19",
+  "condition_code": "4",
+  "description": "Tempestades",
+  "currently": "noite",
+  "cid": "",
+  "city": "Sao Leopoldo, RS",
+  "img_id": "4n",
+  "humidity": 75,
+  "wind_speedy": "6 km/h",
+  "sunrise": "5:52 am",
+  "sunset": "7:24 pm",
+  "condition_slug": "storm",
+  "city_name": "Sao Leopoldo",
+  "forecast": [
+  {
+  "date": "30/01",
+  "weekday": "Sáb",
+  "max": 31,
+  "min": 22,
+  "description": "Tempestades",
+  "condition": "storm"
+  },
+  {
+  "date": "31/01",
+  "weekday": "Dom",
+  "max": 30,
+  "min": 22,
+  "description": "Tempestades",
+  "condition": "storm"
+  },
+  {
+  "date": "01/02",
+  "weekday": "Seg",
+  "max": 27,
+  "min": 22,
+  "description": "Tempestades",
+  "condition": "storm"
+  },
+  {
+  "date": "02/02",
+  "weekday": "Ter",
+  "max": 30,
+  "min": 22,
+  "description": "Tempestades",
+  "condition": "storm"
+  },
+  {
+  "date": "03/02",
+  "weekday": "Qua",
+  "max": 30,
+  "min": 22,
+  "description": "Tempestades",
+  "condition": "storm"
+  },
+  {
+  "date": "04/02",
+  "weekday": "Qui",
+  "max": 28,
+  "min": 21,
+  "description": "Tempestades",
+  "condition": "storm"
+  },
+  {
+  "date": "05/02",
+  "weekday": "Sex",
+  "max": 26,
+  "min": 18,
+  "description": "Parcialmente nublado",
+  "condition": "cloudly_day"
+  },
+  {
+  "date": "06/02",
+  "weekday": "Sáb",
+  "max": 27,
+  "min": 16,
+  "description": "Ensolarado com muitas nuvens",
+  "condition": "cloudly_day"
+  },
+  {
+  "date": "07/02",
+  "weekday": "Dom",
+  "max": 28,
+  "min": 16,
+  "description": "Ensolarado com muitas nuvens",
+  "condition": "cloudly_day"
+  },
+  {
+  "date": "08/02",
+  "weekday": "Seg",
+  "max": 26,
+  "min": 18,
+  "description": "Parcialmente nublado",
+  "condition": "cloudly_day"
+  }
+  ]
+  },
+  "execution_time": 0,
+  "from_cache": true
+  }

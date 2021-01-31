@@ -15,25 +15,25 @@
       <h1 class="container__item1__titulo">Previsão do tempo</h1>
       <div class="container__item1__content">
         <span class="container__item1__content__span">x</span>
-        <h3>Niterói, RJ - Brasil</h3>
-        <h2>20ºC Nublado</h2>
+        <h3 id="city">Niterói, RJ - Brasil</h3>
+        <h2 id="temp"> 20ºC Nublado</h2>
         <div class="container__item1__content__div">
           <ul class="container__item1__content__div__ul">
             <li class="container__item1__content__div__ul--display container__item1__content__div__ul--margin-right ">
               <div class="container__item1__content__div__ul--margin-bottom">
                 <label for="">
                   <i class="fa fa-arrow-down  container__item1__content__div__ul--back-ground-color" ></i>
-                  <span class="container__item1__content__div__ul--font-size">16º</span>
+                  <span id="temp_min"class="container__item1__content__div__ul--font-size">16º</span>
                 </label>
                 <label for="" class="container__item1__content__div__ul--margin-left">
                   <i class="fa fa-arrow-up container__item1__content__div__ul--back-ground-color" ></i>
-                  <span class="container__item1__content__div__ul--font-size">16º</span>
+                  <span id="temp_max"class="container__item1__content__div__ul--font-size">16º</span>
                 </label>    
               </div>
               <div>
                 <label for="" class="">
                   <span>Vento</span> 
-                  <span class="container__item1__content__div__ul--font-size container__item1__content__div__ul--margin-left">18km/h</span>
+                  <span id="wind_speedy" class="container__item1__content__div__ul--font-size container__item1__content__div__ul--margin-left">18km/h</span>
                 </label>   
               </div>
             </li>
@@ -49,14 +49,14 @@
               <div>
                 <label for="">
                   <span>Humidade</span>
-                  <span class="container__item1__content__div__ul--font-size container__item1__content__div__ul--margin-left" >89%</span>
+                  <span id="humidity" class="container__item1__content__div__ul--font-size container__item1__content__div__ul--margin-left" >89%</span>
                 </label>
               </div>
             </li>
           </ul>
         </div>
         <div class="container__item1__content__week">
-          <ul class="container__item1__content__week_ul">
+          <ul id="list_day_of_the_week" class="container__item1__content__week_ul" >
             <li class="container__item1__content__week_ul--margin-right">
               <p class="container__item1__content__week--font-size "  >Terça</p>
               <p class="container__item1__content__week--color">
@@ -86,7 +86,7 @@
               </p>
             </li>
             <li class="container__item1__content__week_ul--margin-right container__item1__content__week_ul--display">
-              <p class="container__item1__content__week--font-size ">sabado</p>
+              <p class="container__item1__content__week--font-size ">sábado</p>
               <p class="container__item1__content__week--color">
                 <span >23º</span>
                 <span >35º</span>
@@ -177,9 +177,8 @@
             </div>
         </div>
     </div>
-
   </div>
-  <script>
+  <script src="js/app.js">
   </script>
   
 </body>
