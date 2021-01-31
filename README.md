@@ -2,7 +2,7 @@
     <a>Desafio-Fontend-1STi</a>
 </h1>
 <h3>
-    O desafio consiste em criar uma página simples, que consuma a API de previsão do tempo, este exercicio esta presente no repositorio
+    O desafio consiste em criar uma página simples, que consuma a API de previsão do tempo, com objetivo de mostrar os dados de previsão do tempo de uma determinada cidade daqui do Brasil. Este exercício esta presente no repositorio
     <a href="https://github.com/felipefialho/frontend-challenges">frontend-challenges</a>, você pode <a href="https://github.com/felipefialho/frontend-challenges"> visitar</a> para conhecer outros desafios
 </h3>
 <h4>Estatus do projeto - concluido<h4>
