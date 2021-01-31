@@ -23,9 +23,6 @@ const days_of_the_week = {
   Sáb:"Sabado"
 }
 
-
-
-
 /*************************
 *Desnvolvimento de funções
 ************************/
