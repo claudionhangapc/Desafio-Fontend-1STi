@@ -24,4 +24,4 @@
         </a>
     </li>
 </ul>
-<p> Obs: a API do HG Weather API apresenta um limite nuito baixo no numero de consulta que pode ser feito no modo gratis. Existe um arquivo json que pode ser na pasta  js, que pode ser usado para teste, caso exceda o limite de busca fornecido pela API </p>
+<p> Obs: a API do HG Weather API apresenta um limite muito baixo no número de consulta que pode ser feito no modo grátis. Existe um arquivo json na pasta  js, que pode ser usado para teste caso exceda o limite de busca fornecido pela API </p>
